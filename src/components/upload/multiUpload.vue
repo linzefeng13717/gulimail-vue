@@ -85,7 +85,7 @@ export default {
             _self.dataObj.ossaccessKeyId = response.data.accessid;
             _self.dataObj.key = response.data.dir + "/"+getUUID()+"_${filename}";
             _self.dataObj.dir = response.data.dir;
-            _self.dataObj.host = response.data.host;
+            _self.dataObj.host = "https://gulimail-forlin.oss-cn-beijing.aliyuncs.com";
             resolve(true);
           })
           .catch(err => {
